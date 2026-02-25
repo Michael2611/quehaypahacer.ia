@@ -1,0 +1,14 @@
+[
+  {
+    "nombre": "Parque La Iguana",
+    "municipio": "Yopal",
+    "tipo": ["naturaleza", "familia"],
+    "descripcion": "Espacio natural para caminar y observar fauna local."
+  },
+  {
+    "nombre": "Rafting Río Upía",
+    "municipio": "Tauramena",
+    "tipo": ["aventura", "rio"],
+    "descripcion": "Actividad de rafting en aguas rápidas."
+  }
+]
