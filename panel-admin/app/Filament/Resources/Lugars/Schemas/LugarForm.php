@@ -40,6 +40,16 @@ class LugarForm
                     ->searchable()
                     ->required(),
 
+                Select::make('esfuerzo')
+                    ->label('Esfuerzo')
+                    ->options([
+                        'alto' => 'Alto',
+                        'medio' => 'Medio',
+                        'bajo' => 'Bajo',
+                    ])
+                    ->searchable()
+                    ->required(),
+
                 Select::make('municipio_id')
                     ->relationship('municipio', 'nombre')
                     ->required(),
@@ -49,15 +59,16 @@ class LugarForm
                 TextInput::make('popularidad')
                 ->numeric()
                 ->default(0),
-                Toggle::make('estado')
-                    ->label('Activo')
-                    ->default(true),
 
                 TextInput::make('latitud')
                     ->numeric(),
 
                 TextInput::make('longitud')
                     ->numeric(),
+
+                Toggle::make('estado')
+                    ->label('Activo')
+                    ->default(true),
 
                 Repeater::make('imagenes')
                     ->relationship()

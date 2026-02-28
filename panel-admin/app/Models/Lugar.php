@@ -15,6 +15,7 @@ class Lugar extends Model
             "slug",
             "descripcion",
             "categoria_id",
+            "esfuerzo",
             "municipio_id","direccion","latitud","longitud","popularidad","estado"];
 
     protected static function booted()

@@ -26,6 +26,7 @@ class LugaresImport implements ToModel, WithHeadingRow
         // Crear lugar
         $lugar = Lugar::create([
             'nombre' => $row['nombre'] ?? 'Sin nombre',
+            'slug' => str_replace(" ", "-",$row['nombre']),
             'descripcion' => $row['descripcion'] ?? null,
             'municipio_id' => $municipio->id,
             'direccion' => $row['direccion'] ?? null,
